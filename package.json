@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json:server": "json-server --watch slider-data.json"
+    "sliderData": "json-server --watch slider-data.json",
+    "rebcenterData": "json-server --watch rebcenterData.json",
+    "public": "json-server --d 1500 --watch rebcenterData.json --s ./public",
+    "hotels": "json-server --watch hotels.json",
+    "gazprom": "json-server --watch gazprom.json",
+    "oberon": "json-server --watch oberon.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.3"
+    "json-server": "^0.17.4"
   }
 }
