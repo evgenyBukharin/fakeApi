@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "sliderData": "json-server --watch slider-data.json",
-    "rebcenterData": "json-server --watch rebcenterData.json",
+    "rebcenterData": "json-server --watch rebcenterData.json --middlewares ./middleware.js",
     "public": "json-server --d 1500 --watch rebcenterData.json --s ./public",
     "hotels": "json-server --watch hotels.json",
     "gazprom": "json-server --watch gazprom.json",
-    "oberon": "json-server --watch oberon.json"
+    "oberon": "json-server --watch oberon.json --middlewares ./middleware.js",
+    "rosinkas": "json-server --watch rosinkas.json --middlewares ./middleware.js",
+    "rosinkasFilter": "json-server --watch rosinkasFilter.json --middlewares ./middleware.js",
+    "rosinkasMeow": "json-server --watch rosinkasMeow.json --middlewares ./middleware.js",
+    "medsi": "json-server --watch medsi.json --middlewares ./middleware.js",
+    "flomaster": "json-server --watch flomaster.json --middlewares ./middleware.js"
   },
   "author": "",
   "license": "ISC",
